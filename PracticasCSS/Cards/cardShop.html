@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #152c4f;
+    }
+    .card{
+
+        width: 400px;
+        height: 500px;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 60px;
+        background-color: #152c4f;
+        position: relative;
+        z-index: 1;
+        box-shadow: -15px 15px 100px 10px rgba(170, 31, 31, 0.5);
+
+    }
+    .card::after{
+        background-color: var(--background-color);
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 60px;
+            /*content: "text";*/
+            width: calc(40% - 10px);
+            border-radius: var(--border-radius);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            font-size: large;
+    }
+    .card::before{
+            background-color: #152c4f;
+            position: absolute;
+            
+            top: 0;
+            right: 10px;
+            width: 200px;
+            margin-top: 1;
+            height: 80px;
+            content: '';
+            border-bottom-left-radius: 30px;
+            box-shadow: -30px 30px 0 var(--background-color);
+    }
+    .info{
+        
+        height: 15%;
+        width: 50%;
+        display: flex;   
+        background-color: #a33030;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 50px;
+        border: 1px white solid;
+            
+    }
+
+    
+    .product{
+        border: 1px rgb(214, 52, 52) dashed;
+        height: 50%;
+        position: relative;
+        background-color: #1a1a1a;
+        
+    }
+    .productInfo{
+        
+        height: 20%;
+        background-color: #1a1a1a;
+      
+    }
+    .options{
+        border: 1px rgb(255, 255, 255) dashed;
+        height: 15%;
+        background-color: #1a1a1a;
+    }
+    .logo{
+        width: 30%;
+        height: 100%;
+   
+        
+        position: relative;
+       
+        }
+    .infoUser{
+        width: 70%;
+        height: 100%;
+        border: 1px black dashed;
+      
+        
+    }
+    .cardTwo {
+        width: 500px;
+        height: 500px;
+        border: 1px black dashed;
+    }
+    .cajita{
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        
+    }
+    .logito{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        inset: 0 0 0 20px;
+        scale: 1.2;
+        margin: auto;
+        border-radius: 50%;
+        border: 1px rgb(255, 255, 255) solid;
+    }
+    .infoUser > *{
+        text-align: center;
+        color: white;
+        padding: 5px;
+        
+    }
+    .image{
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        border: 1px white solid;
+    }
+</style>
+<body>
+    <div class="card">
+
+        <div class="info">
+            <div class="logo" >
+                <img class="logito" src="asets/4fe664184335005a821af1f26c965a5f.jpg" alt="">
+            </div>
+            <div class="infoUser">
+                <h3>Ivancho dev</h3>
+                <h4>Subscribe</h4>
+            </div>
+        </div>
+        <div class="product">
+            <img class="image" src="asets/sneakers-nike-removebg-preview.png" alt="">
+        </div>
+        <div class="productInfo"></div>
+        <div class="options"></div>
+
+    </div>
+    <article class="cardTwo">
+        <div class="cajita uno"></div>
+        <div class="cajita dos"></div>
+        <div class="cajita tres"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+        <div class="cajita"></div>
+    </article>
+    adadas
+</body>
+</html>

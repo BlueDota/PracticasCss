@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+            --background-color: #1a1a1a;
+            --text-color: #ffffff;
+            --border-radius: 30px;
+        }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card {
+        width:min(370px,100%);
+        background-color: red;
+        border: 1px red solid;
+        position: relative;
+    }
+    .card::before {
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 70px;
+            content: '';
+            border-bottom-left-radius: 30px;
+            box-shadow: -30px 30px 0 var(--background-color);
+
+
+        }
+
+        .card::after {
+            background-color: var(--background-color);
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 60px;
+            /*content: "text";*/
+            width: calc(40% - 10px);
+            border-radius: var(--border-radius);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            font-size: large;
+        }
+</style>
+<body>
+    <div class="card">
+
+    </div>
+</body>
+</html>

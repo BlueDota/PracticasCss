@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .container {
+        margin: 5rem;
+        width: 600px;
+        height: 500px;
+        background-color: #35434e;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        resize: both;
+        overflow: auto; 
+        padding: 5px;
+    }
+    .caja{
+        background-color: #365aa3;
+        height: 100px;
+       
+    }
+    .caja1{
+        flex-basis: 100px;
+        flex-shrink: 3;
+        flex-grow: 1;
+        
+        
+    }
+    .caja2{
+        flex-basis: 200px;
+        flex-shrink: 2;
+        flex-grow: 2;
+    }
+    .caja3{
+        flex-basis: 300px;
+        flex-shrink: 1;
+        flex-grow: 4;
+    }
+    .imgcaja{
+
+    background-color: #365aa3;
+  
+    
+
+    }
+    img{
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        width: 200px;
+        object-fit: fill;
+        border: 10px black solid;
+    }
+</style>
+<body>
+    <div class="container">
+       
+        <div class="caja caja1">100px</div>
+        <div class="caja caja2">120px</div>
+        <div class="caja caja3">140px</div>
+    </div>
+ 
+
+   <img src="asetspta/photo_2023-05-07_11-33-05.jpg" alt="">
+
+</body>
+</html>

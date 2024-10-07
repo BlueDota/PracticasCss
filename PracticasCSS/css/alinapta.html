@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alinajs.js"></script>
+    <title>Document</title>
+    <style>
+        :root {
+            height: 100vh;
+            width: 100vw;
+            --background-color: #ffc4b3;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden; /* Agregar esto para evitar el scroll horizontal */
+        }
+        .contenedor {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr 1fr;
+        }
+        .contenedor header {
+            grid-column: 1 / 5;
+            background-color: var(--background-color);
+        }
+        .contenedor main {
+            grid-column: 2 / 5;
+            background-color: #a0262627;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+            
+        }
+        section {
+            background-color: #787896;
+        }
+        footer {
+            background-color: #9b934a;
+            grid-column: 1 / 5;
+        }
+        .caja {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+            height: 100%; /* Mantener la proporción de la imagen */
+            border-radius: 10px;
+        }
+        .info{
+
+            grid-column: 1/5 ;
+        }
+        .contmain{
+           
+            width: 80%;
+            
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
+            gap: 5px;
+            padding: 1rem;
+        }
+        .infoAct{
+            width: 80%;
+            height: 200px;
+            border: 0.1px red solid;
+            border-radius: 20px;
+            background-color: tan;
+            margin-top: 2rem;
+        }.contHeader{
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 5px white solid;
+            background-color: var(--background-color);
+        }
+
+        img:hover{
+            scale: 2;
+            position: relative;
+            background-image: none;
+            background-color: black;
+        }
+        .contFooter{
+            width: 100%;
+            height: 300px;
+            background-color: #0a0a9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="contHeader">
+
+            </div>
+        </header>
+        <section></section>
+        <main>
+            <div class="infoAct">
+                asdasdasdas
+            </div>
+                           
+            <div class="contmain">
+                
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-05.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-06.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-07 (2).jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-07.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-08.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-09.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-10.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-11 (2).jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-14 (2).jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-14.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/photo_2023-05-07_11-33-15 (2).jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/yamato1.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/yamato2.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/yamato3.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/yamato4.jpg" alt="">
+                </div>
+                <div class="caja">
+                    <img src="asetspta/Yamato   #cosplay #anime #onepiece #egirl.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+           <div class="contFooter">
+
+           </div>
+        </footer>
+    </div>
+</body>
+</html>

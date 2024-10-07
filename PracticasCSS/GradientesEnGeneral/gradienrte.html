@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  body{
+    background-color: #4f5f3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+  }
+  .contenedor {
+
+    width: 300px;
+    height: 300px;
+    background-color: #7f9267;
+    background-image: 
+    linear-gradient( 
+      to top,
+
+      #456 50%, 
+      black 70%, 
+      yellow 80%,
+      blue 100%)
+    ;
+  }
+  .bandera{
+
+    width: 450px;
+    height: 300px;
+    border: 1px white solid;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(
+    
+    180deg, 
+    yellow 0 40%,
+    blue 40% 70%,
+    red 70% 100%
+
+    );
+  }
+  .radial{
+    width: 450px;
+    height: 300px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+    
+    radial-gradient(
+     ellipse 290px 150px at 50% 50%,
+       red 0 20%,
+       blue 20% 40%, 
+       yellow 40% 60%, 
+       green 60% 100%
+    );
+  }
+  .radialRepeat{
+    width: 450px;
+    height: 300px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+    
+    repeating-radial-gradient(
+     circle 100px at 50% 50%,
+       red 0 20%,
+       blue 20% 40%, 
+       yellow 40% 50%, 
+       green 60% 65%
+    );
+  }
+  .linealRepeat{
+    width: 450px;
+    height: 300px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+    
+    repeating-linear-gradient(
+     180deg,
+       red 0 10%,
+       blue 10% 20%, 
+       yellow 20% 30%, 
+       green 30% 60%
+    );
+  }
+  .tarea{
+
+    width: 500px;
+    height: 500px;
+    outline: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+
+    linear-gradient(
+      -45deg,
+      black, 
+      transparent
+    ),
+    
+    radial-gradient(
+    circle 100px at 50% 50%,
+    black 0% 35%,
+    transparent 35% 100%
+    ),
+    repeating-radial-gradient(
+    circle,
+    red 2% 10%,
+    darkred 15% 25%,
+    black 30% 31%
+    );
+  }
+  .tarea2{
+    width: 500px;
+    height: 500px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+    
+    repeating-radial-gradient(
+
+    circle 100px,
+    black 0 35% ,
+    red 45% 55%,
+    rgb(0, 204, 255) 55% 56%,
+    red 58%
+
+    )
+    ;
+  }
+  .circulo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    border: 1px black solid;
+  }
+  .circulo2{
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    border: 1px black solid;
+  }
+  .gradienteConico{
+
+    width: 500px;
+    height: 500px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    animation: xd 3s linear infinite;
+    
+  }
+  @property --grados{
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+
+  @keyframes xd {
+
+    0%{
+      --grados: 0deg;
+      background-image: 
+      
+      conic-gradient(
+      from var(--grados),
+      red,
+      black,
+      yellow, 
+      darkred
+    );
+    }
+    100%{
+      --grados: 360deg;
+      background-image: 
+
+      conic-gradient(
+      from var(--grados) at 0 0,
+      red 0 10%,
+      black 20% 60%,
+      yellow 80% 85%, 
+      darkred 90% 100%
+
+    );
+
+    }
+
+  }
+  .contConico{
+      
+    width: 500px;
+    height: 500px;
+    border: 1px white solid;
+    margin-bottom: 1rem;
+    background-image: 
+    repeating-conic-gradient(
+
+   
+    rgb(255, 0, 0) 0deg 10deg,
+    black 10deg 20deg,
+    darkred 20deg 30deg
+
+    );
+    ;
+
+    }
+</style>
+<body>
+    <div class="contenedor">
+
+    </div>
+    <div class="bandera">
+
+    </div>
+    <h3>Gradiente Radial</h3>
+    <div class="radial">
+
+    </div>
+        <h3>Gradiente Radial repeating</h3>
+    <div class="radialRepeat">
+
+    </div>
+    <h3>Gradiente lineal repeating</h3>
+    <div class="linealRepeat">
+
+    </div>
+    <h3>tarea</h3>
+    <div class="tarea">
+
+    </div>
+    <h3>tarea 2</h3>
+    <div class="tarea2">
+
+    </div>
+    <div class="circulo">
+
+    </div>
+    <div class="circulo2">
+
+    </div>
+    <h1>gradiente cónica</h1>
+    <div class="gradienteConico">
+      
+    </div>
+    <section class="contConico">
+      
+      
+      
+      </section>
+
+
+      
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     .uno{
+        width: 100vw;
+        height: auto;
+           display: grid;
+           justify-content: center;
+           border: 1px black solid;
+           padding: 1rem;
+     }
+     .dos{
+        width: 100vw;
+        height: auto;
+           display: grid;
+           padding: 1rem;
+             border: 1px black solid;
+     
+     }
+
+   .xd{
+       border: 1px black solid;
+   }
+  .tres{
+            width: 100vw;
+            height: auto;
+            display: grid;
+            
+            padding: 1rem;
+             border: 1px black solid;
+             grid-template-columns: 1fr 1fr;
+  }
+  .cuatro{
+            width: 100vw;
+            height: auto;
+            display: flex;
+            
+            
+            border: 1px black solid;
+            padding: 1rem;
+  }
+  .rowFlex{
+    border: 1px black solid;
+    flex-grow: 1;
+    height: auto;
+
+  }
+  .image{
+    background: url(./388107.jpg);
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px;
+    margin: 2rem;
+  }
+  .image::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    inset: 20px;
+    position: absolute;
+    background: inherit;
+    filter: blur(15px) contrast(200%);
+    z-index: -1;
+  }
+</style>
+<body>
+    <h1>Display grid con justify content center</h1>
+    <section class="uno">
+        <div class="xd">dasdas</div>
+        <div class="xd">dasdasd</div>
+        <div class="xd">dasdas|</div>
+        <div class="xd">dasdas|</div>
+
+    </section>
+    <h1>Display grid sin justify content center</h1>
+    <section class="dos">
+        <div class="xd">dasdas</div>
+        <div class="xd">dasdasd</div>
+        <div class="xd">dasdas|</div>
+        <div class="xd">dasdas|</div>
+
+    </section>
+    <h1>Display grid con 2 columnas</h1>
+    <p>justify content no tiene efecto :(</p>
+    <section class="tres">
+        <div class="xd">dasdas</div>
+        <div class="xd">dasdasd</div>
+        <div class="xd">dasdas|</div>
+        <div class="xd">dasdas|</div>
+
+    </section>
+    <h1>
+        Display flex
+    </h1>
+    <p>
+        por defecto es row o filas
+    </p>
+    <section class="cuatro">
+   <div class="rowFlex">uno</div>
+   <div class="rowFlex">dos</div>
+   <div class="rowFlex">tres</div>
+   <div class="rowFlex">cuatro</div>
+   <div class="rowFlex">cinco</div>
+
+    </section>
+
+    <div class="image">
+                
+    </div>
+
+</body>
+</html>

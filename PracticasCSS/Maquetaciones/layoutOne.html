@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+
+    }
+    body{
+        position: relative;
+        background-color: #3c4f5450;
+        height: 100vh;
+        background-image: 
+        repeating-linear-gradient(
+         45deg,
+         transparent 0 100px,
+         #25283b22 100px 101px
+        ), 
+        repeating-linear-gradient(
+         -45deg,
+         transparent 0 100px,
+         #25283b22 100px 101px
+        );
+
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: 10% 80% 10%;
+        padding: 6rem;
+        grid-template-areas: 
+        
+            "header header "
+            "article aside"
+            "footer footer"
+        ;
+    }
+    header{
+        background-color: blue;
+        grid-area: header;
+    }
+    article{
+        background-color: brown;
+        grid-area: article;
+       
+
+    }
+    aside{
+
+        background-color: chocolate;
+        grid-area: aside;
+    }
+    footer{
+        background-color: chartreuse;
+        grid-area: footer;
+    }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  body::after{
+
+  }
+  .imagen{
+    width: 500px;
+    height: 500px;
+    border: 1px black solid ;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+  .imagen:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: inherit;
+    
+    filter: blur(200px);
+    z-index: -1;
+  }
+</style>
+<body>
+    <header>
+
+    </header>
+    <article>
+
+    </article>
+    <aside>
+        
+    </aside>
+    <footer>
+
+    </footer>
+
+    <div class="imagen">
+        
+    </div>
+</body>
+</html>

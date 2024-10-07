@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px black solid;
+    }
+    :root{
+        --color:#f300c8;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #53234b;
+    }
+    .contenedorGrid{
+
+        width: 500px;
+        height: 600px;
+        background-color: var(--color);
+        display: grid;
+        
+    }
+    .subCont{
+         width: 200px;
+         height: 200px;
+         background-color: #f53c4d;
+         display: grid;
+
+    }
+    .subCont2{
+        display: grid;
+        width: 400px;
+        height: auto;
+        
+    }
+.cajita{
+       width: 100px;
+       height: 50px;
+       background-color: #f53c4d;
+}
+
+</style>
+<body>
+    <div class="contenedorGrid">
+        <div class="subCont">
+            
+            <div class="caja box1"></div>
+            <div class="caja box2"></div>
+            <div class="caja box3"></div>
+            <div class="caja box4"></div>
+            <div class="caja box4"></div>
+            <div class="caja box4"></div>
+
+        </div>
+        <div class="subCont2">
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+            <div class="cajita"></div>
+        </div>
+
+
+    </div>
+</body>
+</html>

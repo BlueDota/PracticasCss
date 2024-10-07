@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #3c4f5c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+
+
+    }
+    .cuadro{
+        width: 200px;
+        height: 200px;
+        background-color: #608aa7;
+        position: relative;
+    }
+    @property --angulo{
+
+        syntax: "<angle>";
+        inherits: true;
+        initial-value: 0deg;
+
+    }
+    .cuadro::after, 
+    .cuadro::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-image: conic-gradient(
+            from var(--angulo),#283593, #480048, #663399
+        );
+        
+        animation: autoRotate 3s linear infinite;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 15px;
+    }
+    @keyframes autoRotate {
+
+        to {
+            --angulo:360deg;
+        }
+    }
+
+    .cuadro::after {
+    filter: blur(60px);
+    
+    }
+    
+</style>
+<body>
+    <div class="cuadro">
+
+    </div>
+</body>
+</html>

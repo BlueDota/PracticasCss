@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 16px;
+
+        view-timeline-name: --reveal;
+        animation-name: show;
+        animation-fill-mode: both;
+
+        animation-timeline: --reveal;
+        animation-range: entry 25% cover 50%;
+    }
+    body{
+
+        background-color: #111;
+        display: grid;
+        padding-block: 128px;
+        place-content: center;
+        gap: 8px;
+       
+    }
+    @keyframes show {
+        from {
+              opacity: 0;
+              scale: 5%;
+        }
+        to{
+            opacity: 1;
+            scale: 100%;
+        }
+
+    }
+</style>
+<body>
+    <img src="4.jpg" alt=""> 
+    <img src="../10/6.jpg" alt="">
+    <img src="../10/8.jpg" alt="">
+    <img src="../10/15 (1).jpg" alt="">
+    <img src="../10/15.jpg" alt="">
+    <img src="../10/95625985_008_dfad.jpg" alt="">
+    <img src="../10/GVk1LR_XkAEbKc8.jpeg" alt="">
+    <img src="../10/GVkFYUiWsAA799r.jpeg" alt="">
+    <img src="../10/photo_2024-08-23_09-14-59.jpg" alt="">
+    <img src="../10/10.jpg" alt="">
+
+
+</body>
+</html>

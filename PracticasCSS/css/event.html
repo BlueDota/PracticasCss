@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .contenedor{
+        width: 200px;
+        height: 200px;
+        background-color: #3a547c;
+        margin: 4rem;
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    div{
+        width: 80px;
+        height: 90px;
+        background-color: #061225;
+    }
+    .contenedorPrincipal{
+        width: 100vw;
+        height: 500px;
+        background-color: #185ac4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <section class="contenedor">
+
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+    </section>
+
+    <div class="contenedorPrincipal">
+
+    </div>
+
+    <button id="xd">adsads</button>
+    <nav id="xd2">adas</nav>
+</body>
+<script>
+
+   let container = document.querySelector(".contenedor");
+
+   let elements = [];
+   
+   elements = document.getElementsByClassName("box");
+   console.log("el arreglo tiene "+elements.length+" elementos");
+   console.log(elements);
+    
+
+
+     const aler =   document.getElementById("xd2");
+     const aler2 =   document.getElementById("xd");
+     
+     aler.addEventListener("click",function(e,aler2) {
+
+            alert("le estas dando click al nav pa");
+            
+           
+     });
+     aler2.addEventListener("click",function(){
+
+alert("le estas dando click al boton pa");
+});
+
+let contP = document.querySelector(".contenedorPrincipal");
+
+function agregar(x){
+     
+    x.addEventListener("click",function(){
+
+       let newdiv =document.createElement("div");
+        x.appendChild(newdiv);
+    });
+}
+agregar(contP);
+</script>
+</html>

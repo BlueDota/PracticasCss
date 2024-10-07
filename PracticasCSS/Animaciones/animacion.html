@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #3c4f57;
+    }
+    .circulo{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation: rebote 2s linear infinite;
+    }
+
+    @keyframes rebote {
+        from {
+            background-color: black;
+            transform: translateY(150px);
+        }
+        to{
+        background-color: blue;
+        background-color: red;
+        background-color: chartreuse;
+        position: absolute;
+        transform: translate(150px);
+        }
+    }
+
+
+</style>
+<body>
+    <div class="circulo">
+
+    </div>
+</body>
+</html>

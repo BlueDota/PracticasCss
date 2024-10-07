@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: #7c4f53;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    dialog[open] {
+        scale: 1;
+        transition: scale .3s ease-in-out;
+        @starting-style {
+            scale: 0;
+        }
+    }
+    dialog {
+        
+        transition: scale .3s ease,
+        display .3s allow-discrete;
+        scale: 0;
+        width: 100%;
+        height: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 20px;
+        margin:  auto;
+        
+    }
+    #button{
+        padding: 1rem;
+        background-color: #dfa0a5;
+        border-radius: 20px;
+    }
+    #ok{
+        padding: 1rem;
+        background-color: #dfa0a5;
+        border-radius: 20px;
+        width: 200px;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 2rem;
+
+    }
+</style>
+<body>
+    
+    <dialog>
+        <p>Contenido de la modal</p>
+        <form method="dialog">
+            <button id="ok">ok</button>
+        </form>
+    </dialog>
+    <button id="button">abrir modal</button>
+<script>
+    const button = document.querySelector('#button');
+    const dialog = document.querySelector('dialog');
+
+    button.addEventListener('click',() => {
+        dialog.showModal();
+    });
+</script>
+
+</body>
+</html>
